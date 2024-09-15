@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BetterBite - How We Calculate</title>
+    <link rel="stylesheet" href="/static/css/calc.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/static/imgs/logo.png" />
+  </head>
+  <body>
+    <!--Top Bar-->
+    <div id="main_menu">
+      <a href="/index.html"
+        ><img src="/static/imgs/logo.png" alt="" />
+        <h1>BetterBite</h1></a
+      >
+      <div id="side_nav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="/index.html"><h3>Home</h3></a>
+        <a href="/about.html"><h3>About Us</h3></a>
+        <a href="/calc.html"><h3>How We Calculate</h3></a>
+      </div>
+
+      <span style="font-size: 50px; cursor: pointer" onclick="openNav()"
+        >&#9776;</span
+      >
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("side_nav").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("side_nav").style.width = "0";
+      }
+    </script>
+  </body>
+</html>

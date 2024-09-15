@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BetterBite - Sustainable Dieting</title>
+    <link rel="stylesheet" href="./static/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/static/imgs/logo.png" />
+  </head>
+  <body>
+    <!--Top Bar-->
+    <div id="main_menu">
+      <!-- <img id="background" src="/static/imgs/LogoDecor.png" alt="" height="1000px"> -->
+
+      <a href="/index.html"
+        ><img src="/static/imgs/logo.png" alt="" />
+        <h1>BetterBite</h1></a
+      >
+      <div id="side_nav" class="sideNav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="/index.html"><h3>Home</h3></a>
+        <a href="/about.html"><h3>About Us</h3></a>
+        <a href="/calc.html"><h3>How We Calculate</h3></a>
+      </div>
+      <span style="font-size: 50px; cursor: pointer" onclick="openNav()"
+        >&#9776;</span
+      >
+    </div>
+
+    <!--Description paragraph-->
+    <div id="description">
+      <p>
+        Welcome to BetterBite! Start by entering your foods in the <br />
+        search below to calculate how your food consumption affects <br />
+        the environment.
+      </p>
+    </div>
+
+    <!--Input Area-->
+    <div id="input_list">
+      <form id="food_input">
+        <input
+          id="food"
+          name="food"
+          type="text"
+          placeholder="Enter Food Item"
+        />
+        <input type="text" placeholder="Enter calories" id="calories" />
+        <button type="submit" name="submit" value="submit">Submit</button>
+      </form>
+    </div>
+
+    <!--List Area-->
+    <ul id="food_items"></ul>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
